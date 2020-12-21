@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<style>
+    @font-face {
+        font-family: Open-Sans;
+        src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+    }
+    #main {
+        height: 1900px;
+        width: 100%;
+        background: #EEFBFB;
+        color: white;
+        margin: auto;
+    }
+    #title {
+        margin-top: 2%;
+        font-family: Open-Sans;
+        font-size: 8vmin;
+        text-align: center;
+        vertical-align: middle;
+        height: 7.5%;
+        width: 100%;
+        background: #4DA8DA;
+    }
+    #subtitle {
+        height:auto;
+        width: auto;
+        font-family: Open-Sans;
+        font-size: 1.5vmin;
+        text-align: center;
+        position: center;
+    }
+    #img-div {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-left: -45%;
+        text-align: center;
+        vertical-align: middle;
+        background: #4DA8DA;
+        height: 60%;
+        width: 90%;
+    }
+    #img{
+        margin-top: 0.5%;
+        height: auto;
+        max-width: 40vmin;
+        width:40vmin;
+    }
+    #img-caption {
+
+        text-align: center;
+        width: auto;
+        height: auto;
+        font-size: 1.5vmin;
+    }
+    #body-paragraph {
+        position: absolute;
+        top: 85%;
+        background: #4DA8DA;
+        width: 97.5%;
+        height: 90%;
+        left: 50%;
+        margin-left: -48.75%;
+    }
+    #list-title
+    {
+        text-align: center;
+        font-size: 4vmin;
+    }
+    #image-grid{
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        margin-left: -50%;
+        display:grid;
+        height: 70%;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 3vmin;
+        justify-items:center;
+        grid-template-areas:
+            "image1 image2 image3"
+            "image4 image5 image6";
+        text-align:center;
+    }
+    #image1 {
+        grid-area: image1;
+        height: auto;
+        width: 100%;
+        align-self:end;
+    }
+    #image2 {
+        grid-area: image2;
+        height: auto;
+        width: 100%;
+        align-self: end;
+    }
+    #image3 {
+        grid-area: image3;
+        height: auto;
+        width: 100%;
+        align-self: end;
+    }
+    #image4 {
+        grid-area: image4;
+    }
+    #image5 {
+        grid-area: image5;
+    }
+    #image6 {
+        grid-area: image6;
+    }
+    #image-in-grid{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 40vmin;
+        height: auto;
+    }
+    #image-inn {
+        width: 28vmin;
+        height: 30vmin;
+    }
+</style>
+<html>
+    <body id="main">
+        <header id="title">Charles Babbage <p id="subtitle">The father of computers</p></header>
+        <div id="img-div">
+            <img id="img" src="Charles_Babbage.jpg" alt="Picture of Charles Babbage"/><br>
+            <p id="img-caption"> Charles Babbage was a mathematician as well as an inventor who created the first digital computer.
+            He is widely regarded as the "Father of Computers". He was born on the 26<sup>th</sup> of December 1971 in London, England and died on the 18<sup>th</sup> of October in 1871 in the same city.</p>
+        </div>
+        <div id="body-paragraph">
+            <p id="list-title">Notable images:</p>
+            <div id="image-grid">
+                <figure id="image1">
+                    <img id="image-in-grid" src="Analytical_Engine.jpg" alt="A part of the analytical engine" />
+                    <figcaption>A part of the analytical engine in  King George III Museum in King's College, London in 1843.</figcaption>
+                </figure>
+                <figure id="image2">
+                    <img id="image-in-grid" src="Difference-Engine.jpg" alt="" />
+                    <figcaption>A part of the difference engine in Whipple Museum of the History of Science, Cambridge, England.</figcaption>
+                </figure>
+                <figure id="image3">
+                    <img id="image-inn" src="Babbage-Brain.jpg" alt="" />
+                    <figcaption>The brain of Mr. Babbage on display at the Science Museum in London.</figcaption>
+                </figure>
+                <figure id="image4">
+                    <img id="image-in-grid" src="" alt="" />
+                    <figcaption></figcaption>
+                </figure>
+                <figure id="image5">
+                    <img id="image-in-grid" src="" alt="" />
+                    <figcaption></figcaption>
+                </figure>
+                <figure id="image6">
+                    <img id="image-in-grid" src="" alt="" />
+                    <figcaption></figcaption>
+                </figure>
+
+
+            </div>
+            <p id="tribute-info"></p>
+            <a href="" target="_blank"></a>
+        </div>
+
+    </body>
+</html>
