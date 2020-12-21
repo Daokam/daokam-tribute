@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <style>
     @font-face {
         font-family: Open-Sans;
@@ -40,10 +41,15 @@
         height: 60%;
         width: 90%;
     }
-    #img{
+    #image{
+        display:block;
+        
         margin-top: 0.5%;
+        margin-left:auto;
+        margin-right:auto;
         height: auto;
-        max-width: 40vmin;
+        max-height: 1110px;
+        max-width: 40vw;
         width:40vmin;
     }
     #img-caption {
@@ -122,11 +128,13 @@
         height: 30vmin;
     }
 </style>
+
 <html>
+
     <body id="main">
         <header id="title">Charles Babbage <p id="subtitle">The father of computers</p></header>
         <div id="img-div">
-            <img id="img" src="Charles_Babbage.jpg" alt="Picture of Charles Babbage"/><br>
+            <img id="image" src="Charles_Babbage.jpg" alt="Picture of Charles Babbage"/><br>
             <p id="img-caption"> Charles Babbage was a mathematician as well as an inventor who created the first digital computer.
             He is widely regarded as the "Father of Computers". He was born on the 26<sup>th</sup> of December 1971 in London, England and died on the 18<sup>th</sup> of October in 1871 in the same city.</p>
         </div>
@@ -166,3 +174,4 @@
 
     </body>
 </html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
