@@ -5,173 +5,267 @@
         font-family: Open-Sans;
         src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
     }
+
     #main {
-        height: 1900px;
+        height: 2900px;
         width: 100%;
-        background: #EEFBFB;
+        background: #FFFFFF;
         color: white;
         margin: auto;
+        font-family: Open-Sans;
     }
+
     #title {
         margin-top: 2%;
-        font-family: Open-Sans;
         font-size: 8vmin;
         text-align: center;
         vertical-align: middle;
-        height: 7.5%;
+        height: 5%;
         width: 100%;
-        background: #4DA8DA;
+        background: rgba(14,54,90, 0.8);
     }
+
     #subtitle {
-        height:auto;
+        height: auto;
         width: auto;
-        font-family: Open-Sans;
         font-size: 1.5vmin;
         text-align: center;
         position: center;
     }
+
     #img-div {
         position: absolute;
         top: 20%;
         left: 50%;
         margin-left: -45%;
-        text-align: center;
-        vertical-align: middle;
-        background: #4DA8DA;
-        height: 60%;
+        height: 58%;
         width: 90%;
     }
-    #image{
-        display:block;
-        
-        margin-top: 0.5%;
-        margin-left:auto;
-        margin-right:auto;
+
+    #image {
+        display: block;
+        margin-top: 0.8%;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
         max-height: 1110px;
         max-width: 40vw;
-        width:40vmin;
+        width: 40vmin;
     }
-    #img-caption {
 
-        text-align: center;
-        width: auto;
+    #img-caption {
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        margin-left: -32.5%;
         height: auto;
-        font-size: 1.5vmin;
+        margin-top: 0;
+        font-size: 2vmin;
+        color: black;
     }
-    #body-paragraph {
+
+    #tribute-info {
         position: absolute;
         top: 85%;
-        background: #4DA8DA;
+        background: rgba(14,54,90, 0.6);
+        width: 97.5%;
+        height: 80%;
+        left: 50%;
+        margin-left: -48.75%;
+    }
+
+    #list-title {
+        text-align: center;
+        font-size: 4vmin;
+    }
+
+    #list {
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        font-size: 3vmin;
+    }
+
+    li {
+        margin: 1% 0;
+    }
+
+    #page-link {
+        position: absolute;
+        top: 92%;
+        left: 2.8%;
+        height: auto;
+        width: auto;
+        font-size: 2vmin;
+    }
+
+    #tribute-images {
+        position: absolute;
+        top: 172%;
+        background: rgba(14,54,90, 0.6);
         width: 97.5%;
         height: 90%;
         left: 50%;
         margin-left: -48.75%;
     }
-    #list-title
-    {
-        text-align: center;
-        font-size: 4vmin;
-    }
-    #image-grid{
+
+
+    #image-grid {
         position: absolute;
         top: 12%;
         left: 50%;
-        margin-left: -50%;
-        display:grid;
-        height: 70%;
-        width: 100%;
+        margin-left: -45%;
+        display: grid;
+        height: 40%;
+        width: 90%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 3vmin;
-        justify-items:center;
-        grid-template-areas:
-            "image1 image2 image3"
-            "image4 image5 image6";
-        text-align:center;
+        grid-column-gap: 3vmin;
+        justify-items: center;
+        grid-template-areas: "image1 image2 image3" "image4 image5 image6";
+        text-align: center;
     }
+
     #image1 {
         grid-area: image1;
         height: auto;
         width: 100%;
-        align-self:end;
+        align-self: end;
     }
+
     #image2 {
         grid-area: image2;
         height: auto;
         width: 100%;
         align-self: end;
     }
+
     #image3 {
         grid-area: image3;
         height: auto;
         width: 100%;
         align-self: end;
     }
+
     #image4 {
         grid-area: image4;
+        height: auto;
+        width: 100%;
+        align-self: end;
     }
+
     #image5 {
         grid-area: image5;
+        height: auto;
+        width: 100%;
+        align-self: end;
     }
+
     #image6 {
         grid-area: image6;
+        height: auto;
+        width: 100%;
+        align-self: end;
     }
-    #image-in-grid{
-        display: inline-block;
-        vertical-align: bottom;
+
+    #image-dim-1 {
         width: 40vmin;
         height: auto;
     }
-    #image-inn {
-        width: 28vmin;
+
+    #image-dim-2 {
+        width: 25vmin;
+        height: 30vmin;
+    }
+
+    #image-dim-2 {
+        width: 25vmin;
+        height: 30vmin;
+    }
+
+    #image-dim-3 {
+        width: 30vmin;
         height: 30vmin;
     }
 </style>
 
 <html>
 
-    <body id="main">
-        <header id="title">Charles Babbage <p id="subtitle">The father of computers</p></header>
-        <div id="img-div">
-            <img id="image" src="Charles_Babbage.jpg" alt="Picture of Charles Babbage"/><br>
-            <p id="img-caption"> Charles Babbage was a mathematician as well as an inventor who created the first digital computer.
-            He is widely regarded as the "Father of Computers". He was born on the 26<sup>th</sup> of December 1971 in London, England and died on the 18<sup>th</sup> of October in 1871 in the same city.</p>
+<body id="main">
+    <header id="title">Charles Babbage <p id="subtitle">The father of computers</p></header>
+    <div id="img-div">
+        <img id="image" src="images/Charles_Babbage.jpg" alt="Picture of Charles Babbage" /><br>
+        <p id="img-caption">
+            Charles Babbage was a mathematician as well as an inventor who created the first digital computer.
+            He is widely regarded as the "Father of Computers". He was born on the 26<sup>th</sup> of December 1971 in London, England and died on the 18<sup>th</sup> of October in 1871 in the same city.
+        </p>
+    </div>
+    <div id="tribute-info">
+        <p id="list-title">Notable facts:</p>
+        <ul id="list">
+            <li>Mr. Babbage a brilliant self-taught mathematician</li>
+            <li>He started studying at Trinity College in Cambridge in October 1810</li>
+            <li>After his graduation, Charles Babbage had a lot of difficulty in finding a job</li>
+            <li>Babbage was a part of founding the Royal Astronomical Society in 1820</li>
+            <li>The creation of the first computer originated from the want to erase errors in mathematical tables</li>
+            <li>From 1828 to 1839, Babbage was a Lucasian Professor of Mathematics at Cambridge</li>
+            <li>He had a distaste for commoners and street music as observed in his writing</li>
+            <li>A prototype made to calculate polynomial functions named the difference engine was created by Babbage with the help of Joseph Clement, some parts remain in the Museum of the History of Science, Oxford </li>
+            <li>Charles Babbage worked on a design even more complex than the difference engine named the analytical engine, it worked as a general purpose computation machine, in other words, the first computer</li>
+            <li>Most of Mr. Babbage's inventions were completed only after his death as he had a lot of problems with funding</li>
+        </ul>
+        <div id="page-link">To know more about this man, his <a id="tribute-link" href="https://www.britannica.com/biography/Charles-Babbage" target="_blank">Encyclopedia Britannica page</a> is very insightful.</div>
+    </div>
+    <div id="tribute-images">
+        <p id="list-title">Notable images:</p>
+        <div id="image-grid">
+            <figure id="image1">
+                <img id="image-dim-1" src="images/Analytical_Engine.jpg" alt="A part of the analytical engine" />
+                <figcaption>A part of the analytical engine in  King George III Museum in King's College, London in 1843.</figcaption>
+            </figure>
+            <figure id="image2">
+                <img id="image-dim-1" src="images/Difference-Engine.jpg" alt="A part of the difference engine" />
+                <figcaption>A part of the difference engine in Whipple Museum of the History of Science, England.</figcaption>
+            </figure>
+            <figure id="image3">
+                <img id="image-dim-2" src="images/Babbage-Brain.jpg" alt="Babbage's brain" />
+                <figcaption>
+                    The brain of Mr. Babbage on display at the Science Museum in London.
+                    By <a rel="nofollow" class="external text" target="_blank" href="https://www.flickr.com/photos/37996646802@N01">Alan Levine</a>
+                    from Strawberry, United States - <a target="_blank" rel="nofollow" class="external text" href="https://www.flickr.com/photos/cogdog/4905705655/">Babbage's Brain</a>Uploaded by
+                    <a target="_blank" href="//commons.wikimedia.org/wiki/User:PDTillman" class="mw-redirect" title="User:PDTillman">PDTillman</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>,
+                    <a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=11234259">Link</a>
+                </figcaption>
+            </figure>
+            <figure id="image4">
+                <img id="image-dim-2" src="images/Difference-Engine-2.jpg" alt="A part of the difference engine" />
+                <figcaption>Another view of the difference engine</figcaption>
+            </figure>
+            <figure id="image5">
+                <img id="image-dim-1" src="images/Babbage-grave.jpg" alt="" />
+                <figcaption>
+                    Babbage's grave by <a target="_blank" href="//commons.wikimedia.org/wiki/User:Deeday-UK" title="User:Deeday-UK">Deeday-UK</a>
+                    - <span class="int-own-work" lang="en">Own work</span>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>,
+                    <a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=34941736">Link</a>
+                </figcaption>
+
+            </figure>
+            <figure id="image6">
+                <img id="image-dim-3" src="images/Babbage-plaque.jpg" alt="" />
+                <figcaption>
+                    Babbage's plaque in London By <a target="_blank" rel="nofollow" class="external text" href="https://www.flickr.com/people/50996541@N00">Simon Harriyott</a>
+                    from Uckfield, England - <a target="_blank" rel="nofollow" class="external text" href="https://www.flickr.com/photos/harriyott/5108336102/">Charles Babbage</a>
+                    Uploaded by <a target="_blank" href="//commons.wikimedia.org/wiki/User:Oxyman" title="User:Oxyman">Oxyman</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>,
+                    <a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=24731976">Link</a>
+                </figcaption>
+            </figure>
+
+
         </div>
-        <div id="body-paragraph">
-            <p id="list-title">Notable images:</p>
-            <div id="image-grid">
-                <figure id="image1">
-                    <img id="image-in-grid" src="Analytical_Engine.jpg" alt="A part of the analytical engine" />
-                    <figcaption>A part of the analytical engine in  King George III Museum in King's College, London in 1843.</figcaption>
-                </figure>
-                <figure id="image2">
-                    <img id="image-in-grid" src="Difference-Engine.jpg" alt="" />
-                    <figcaption>A part of the difference engine in Whipple Museum of the History of Science, Cambridge, England.</figcaption>
-                </figure>
-                <figure id="image3">
-                    <img id="image-inn" src="Babbage-Brain.jpg" alt="" />
-                    <figcaption>The brain of Mr. Babbage on display at the Science Museum in London.</figcaption>
-                </figure>
-                <figure id="image4">
-                    <img id="image-in-grid" src="" alt="" />
-                    <figcaption></figcaption>
-                </figure>
-                <figure id="image5">
-                    <img id="image-in-grid" src="" alt="" />
-                    <figcaption></figcaption>
-                </figure>
-                <figure id="image6">
-                    <img id="image-in-grid" src="" alt="" />
-                    <figcaption></figcaption>
-                </figure>
 
+    </div>
 
-            </div>
-            <p id="tribute-info"></p>
-            <a href="" target="_blank"></a>
-        </div>
-
-    </body>
+</body>
 </html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
