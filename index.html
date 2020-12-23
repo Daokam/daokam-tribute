@@ -7,7 +7,7 @@
     }
 
     #main {
-        height: 3000px;
+        height: auto;
         width: 100%;
         background: #FFFFFF;
         color: white;
@@ -106,28 +106,30 @@
         top: 172%;
         background: rgba(14,54,90, 0.6);
         width: 97.5%;
-        height: 90%;
+        height: 100%;
         left: 50%;
         margin-left: -48.75%;
         border: 8px solid rgba(14,54,90, 0.8);
+	    margin-bottom: 500px;
     }
 
 
     #image-grid {
         position: absolute;
-        top: 12%;
+        top: 8%;
         left: 50%;
         margin-left: -45%;
         display: grid;
         height: 40%;
         width: 90%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
         grid-row-gap: 3vh;
         grid-column-gap: 3vw;
         justify-items: center;
         grid-template-areas: "image1 image2 image3" "image4 image5 image6";
         text-align: center;
+	    font-size: 2vmin;
     }
 
     #image1 {
@@ -188,6 +190,13 @@
         width: 30vmin;
         height: 30vmin;
         border: 8px solid white;
+    }
+    #end{
+        position: absolute;
+        background: transparent;
+        height: 7%;
+        width: 100%;
+        top: 272%;
     }
 </style>
 
@@ -266,7 +275,7 @@
         </div>
 
     </div>
-
+    <div id="end"></div>
 </body>
 </html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
